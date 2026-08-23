@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Proud To Be A Second Owner</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+    <h1>🚗 Proud To Be A Second Owner</h1>
+
+    <button onclick="darkMode()">
+        🌙
+    </button>
+
+</nav>
+
+
+<!-- Navigation Bar -->
+
+<div align="center">
+
+    <nav>
+
+        <a href="signup2.html">Sign up to buy new CARS</a>
+
+        <a href="altowagnorswift.html">Budget Friendly</a>
+
+        <a href="hotselling.html">HOT Selling🔥</a>
+
+        <a href="safetycars.html">BEST Safety</a>
+
+        <a href="signup.html">Sign up to sell your CAR</a>
+
+    </nav>
+
+</div>
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <h2>
+        Find Your Perfect Second-Hand Car
+    </h2>
+
+    <p>
+        Smart recommendation system for your dream car
+    </p>
+
+    <button onclick="explorecars()">
+        Explore Cars
+    </button>
+
+</section>
+
+
+
+<!-- ================= REQUIREMENT FORM ================= -->
+
+<section class="form">
+
+    <h2>
+        Tell Us Your Requirement
+    </h2>
+
+    <input placeholder="Your Budget">
+
+    <select>
+
+        <option>Select Brand</option>
+
+        <option>BMW</option>
+
+        <option>Audi</option>
+
+        <option>Hyundai</option>
+
+        <option>Tata</option>
+
+    </select>
+
+
+    <select>
+
+        <option>Select Fuel</option>
+
+        <option>Petrol</option>
+
+        <option>Diesel</option>
+
+        <option>Electric</option>
+
+    </select>
+
+
+    <select>
+
+        <option>Select Transmission</option>
+
+        <option>Automatic</option>
+
+        <option>Manual</option>
+
+    </select>
+
+
+    <button onclick="findCar()">
+        Find My Car
+    </button>
+
+</section>
+
+
+
+<!-- ================= FEATURED CARS ================= -->
+
+<section class="cars">
+
+    <h2>
+        Featured Cars
+    </h2>
+
+
+    <button onclick="bmw3series()">
+
+        <div class="card">
+
+            <h3>
+                BMW 3 Series
+            </h3>
+
+            <p>
+                2021 | Petrol | Automatic
+            </p>
+
+            <p>
+                ₹35 Lakh
+            </p>
+
+        </div>
+
+    </button>
+
+
+
+    <button onclick="hyundaicreta()">
+
+        <div class="card">
+
+            <h3>
+                Hyundai Creta
+            </h3>
+
+            <p>
+                2022 | Diesel | Manual
+            </p>
+
+            <p>
+                ₹12 Lakh
+            </p>
+
+        </div>
+
+    </button>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer style="
+    background:#081522;
+    color:white;
+    padding:25px;
+">
+
+    <center>
+
+        <h3>
+            🚗 Proud To Be A Second Owner
+        </h3>
+
+        <p>
+            Affordable Cars • Smart Choices • Happy Owners
+        </p>
+
+        <p>
+            © 2025 Proud To Be A Second Owner
+        </p>
+
+    </center>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function darkMode(){
+
+    document.body.classList.toggle("dark");
+
+}
+
+
+function findCar(){
+
+    alert("Analyzing your requirements... 🚗");
+
+    setTimeout(function(){
+
+        alert(
+            "Recommended Car: Hyundai Creta 🚘\n\n" +
+            "Reason:\n" +
+            "✔ Good Budget Match\n" +
+            "✔ Reliable Brand\n" +
+            "✔ Best Resale Value"
+        );
+
+    },1000);
+
+}
+
+
+function explorecars(){
+
+    window.location.href = "/explorecars.html";
+
+}
+
+
+function bmw3series(){
+
+    window.location.href = "/bmw3series.html";
+
+}
+
+
+function hyundaicreta(){
+
+    window.location.href = "/hyundaicreta.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

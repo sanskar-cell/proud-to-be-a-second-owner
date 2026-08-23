@@ -1,0 +1,133 @@
+<section>
+
+    <h1>🚗 Become a Verified Car Seller</h1>
+
+    <p>
+        Join India's trusted second-hand car community and list your vehicle
+        in just a few minutes.
+    </p>
+
+    <form action="/register" method="POST">
+
+        <fieldset>
+
+            <legend><strong>👤 Owner Information</strong></legend>
+
+            <label>Full Name</label><br>
+            <input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+            <label>Mobile Number</label><br>
+            <input type="tel" name="phone" placeholder="+91 9876543210" required><br><br>
+
+            <label>City</label><br>
+            <input type="text" name="city" placeholder="Mumbai"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>🚘 Car Details</strong></legend>
+
+            <label>Car Brand</label><br>
+            <select name="brand" required>
+                <option value="">Select Brand</option>
+                <option>Maruti Suzuki</option>
+                <option>Hyundai</option>
+                <option>Tata</option>
+                <option>Mahindra</option>
+                <option>Honda</option>
+                <option>Toyota</option>
+                <option>Kia</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Mercedes-Benz</option>
+            </select>
+
+            <br><br>
+
+            <label>Model Name</label><br>
+            <input type="text" name="model" placeholder="Creta, Swift, Nexon..." required><br><br>
+
+            <label>Manufacturing Year</label><br>
+            <input type="number" name="year" min="1995" max="2025" required><br><br>
+
+            <label>Fuel Type</label><br>
+            <select name="fuel">
+                <option>Petrol</option>
+                <option>Diesel</option>
+                <option>CNG</option>
+                <option>Electric</option>
+                <option>Hybrid</option>
+            </select>
+
+            <br><br>
+
+            <label>Transmission</label><br>
+            <select name="transmission">
+                <option>Manual</option>
+                <option>Automatic</option>
+            </select>
+
+            <br><br>
+
+            <label>Kilometers Driven</label><br>
+            <input type="number" name="km" placeholder="45000"><br><br>
+
+            <label>Expected Selling Price (₹)</label><br>
+            <input type="number" name="price" placeholder="650000"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>📸 Upload Documents</strong></legend>
+
+            <label>Car Photo</label><br>
+            <input type="file" name="carImage"><br><br>
+
+            <label>RC Book</label><br>
+            <input type="file" name="rc"><br><br>
+
+            <label>Insurance Copy</label><br>
+            <input type="file" name="insurance"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>📝 Additional Details</strong></legend>
+
+            <textarea
+                name="description"
+                rows="6"
+                cols="50"
+                placeholder="Describe your car condition, service history, accessories, number of owners, etc.">
+            </textarea>
+
+        </fieldset>
+
+        <br>
+
+        <label>
+            <input type="checkbox" required>
+            I confirm that all the information provided is correct.
+        </label>
+
+        <br><br>
+
+        <button type="submit">
+            🚀 Register My Car
+        </button>
+
+    </form>
+
+</section>
